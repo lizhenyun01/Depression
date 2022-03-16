@@ -1,0 +1,17 @@
+# Variable运算
+- mul 元素乘法
+- matmul 矩阵乘法
+- add 加法，支持自动广播
+- subtract 减法，支持自动广播
+- divide 除法
+- reciprocal 取倒数
+- exp e为底的指数函数
+- pow 幂函数
+- tan
+- cos
+- sin
+- abs 取绝对值
+- around 四舍五入
+- floor 向下取整
+- ceil 向上取整
+- mod 取模

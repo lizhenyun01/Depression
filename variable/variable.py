@@ -32,10 +32,11 @@ class Variable(object):
         self.__value = value
 
 def variavle(value, name=None):
-    if type(value) is np.ndarray:
-        return Variable(value, value.shape, dtype=dtype(value), name=name)
-    elif type(value) is list:
-        return Variable(np.asarray(value, dtype), value.shape, dtype=dtype(value), name=name)
+    if  isinstance(value, np.ndarray):
+        return Variable(value, value.shape, dtype= value.dtype, name=name)
+    elif isinstance(value, list):
+        value = np.asarray(value)
+        return Variable(value, value.shape, dtype=value.dtype, name=name)
     
     else:
         error("Value must be numpy.ndarray or list !")

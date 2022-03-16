@@ -1,30 +1,8 @@
-class Name(object):
-    def __init__(self, value):
-        self.__value = value
-    def value(self):
-        return self.__value
-    def update_value(self, value):
-        self.__value = value
-        
-        
-class Person(object):
-    def __init__(self,name):
-        self.__name = name
-        
-    def name(self):
-        return self.__name
-    
-    def set_name(self,name):
-        self.__name = name
-        
-    
-    def update_name(self, value):
-        self.__name.update_value(value)
+import numpy as np
 
-
-a = Person(Name('1'))
-
-b = Person(Name('2'))
-
-m = a()
-print(m)
+m = np.array([[1,2,3],[4,5,6]],dtype=np.float32)
+a = np.multiply(2,2.5)
+l = [1,2,3]
+l_np = np.asarray(1)
+print(m.dtype)
+print(type(l_np))
